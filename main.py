@@ -1,4 +1,5 @@
 import argparse
+import control
 
 class argparse_operator:
     def __init__(self):
@@ -66,39 +67,63 @@ class argparse_operator:
 
     def diskful_shutdown(self,arg):
         print("python3 main.py diskful shutdown")
+        test = control.TestOperation()
+        test.diskful_shutdown()
 
     def diskful_poweroff(self,arg):
         print("python3 main.py diskful poweroff")
+        test = control.TestOperation()
+        test.diskful_poweroff()
 
     def diskful_ifconfig(self,arg):
         print("python3 main.py diskful ifconfig")
+        test = control.TestOperation()
+        test.diskful_ifconfig()
 
     def diskful_line(self,arg):
         print("python3 main.py diskful line")
+        test = control.TestOperation()
+        test.diskful_line()
 
     def diskful_port(self,arg):
         print("python3 main.py diskful port")
+        test = control.TestOperation()
+        test.diskful_port()
         
     def diskful_switch(self,arg):
         print("python3 main.py diskful switch")
+        test = control.TestOperation()
+        test.diskful_switch()
 
     def diskless_shutdown(self, arg):
         print("python3 main.py diskless shutdown")
+        test = control.TestOperation()
+        test.diskless_shutdown()
 
     def diskless_poweroff(self, arg):
         print("python3 main.py diskless poweroff")
+        test = control.TestOperation()
+        test.diskless_poweroff()
 
     def diskless_ifconfig(self, arg):
         print("python3 main.py diskless ifconfig")
+        test = control.TestOperation()
+        test.diskless_ifconfig()
 
     def diskless_line(self, arg):
         print("python3 main.py diskless line")
+        test = control.TestOperation()
+        test.diskless_line()
 
     def diskless_port(self, arg):
         print("python3 main.py diskless port")
+        test = control.TestOperation()
+        test.diskless_port()
 
     def diskless_switch(self, arg):
         print("python3 main.py diskless switch")
+        test = control.TestOperation()
+        test.diskless_switch()
 
     def parser_init(self):
         args = self.parser.parse_args()

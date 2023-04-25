@@ -1,0 +1,31 @@
+Cycle execution times: 1  #程序循环执行的次数
+resource_name: test
+diskless_node_info:
+  name: dunn-test03
+  ip: 10.203.1.115
+  username: root
+  password: password
+  NIC: bond0
+  port: None
+diskful_node_info:
+  - name: dunn-test01
+    ip: 10.203.1.112
+    username: root
+    password: password
+    NIC: bond0
+    port: None
+  - name: dunn-test02
+    ip: 10.203.1.113
+    username: root
+    password: password
+    NIC: bond0
+    port: None
+switch_info:
+   ip: None
+go-meter:
+  JobNum: 1
+  BlockSize: 8K   #设置单次生成和写入数据的大小
+  TotalSize: 10G  #设置写入单个文件/设备的数据总大小
+  MasterMask: shutdownhxnode1  #block 级测试使用的参数，设置并发写入的线程数（大于0的整数）
+  DevicePath: /dev/sdb  #device ID 用于生成特定的数据
+
